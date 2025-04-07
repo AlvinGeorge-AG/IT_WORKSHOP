@@ -1,0 +1,10 @@
+1.	Create a simple webpage that includes a heading, paragraph, and an image.
+2.	Design an unordered list of your favourite books or movies using <ul> and <li>
+3.	Write an HTML form that collects a user's name and email address.
+4.	Make a button that displays an alert message when clicked.
+5.	Build a simple table to display three rows of data.
+6.	Create an ordered and unordered list of your favourite hobbies
+7.	Apply a background color to a webpage using CSS.
+8.	Change the font size of a heading element using CSS.
+9.	Apply padding and margin to elements to create spacing.
+10.	Link an external CSS file to an HTML document
