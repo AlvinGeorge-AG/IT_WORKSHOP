@@ -12,44 +12,60 @@
             .details{
                 background-color: black;
                 width: 150px;
-                height: 130px;
+                height: 160px;
                 margin-top: 15%;
                 margin-left: 42%;
                 color: aqua;
-                margin-bottom: 5px;
-                border-radius: 15px;   
+                border-radius: 15px;  
+                padding: 70px;
+                position: absolute;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                border: 2px solid aqua;
+                 
             }
             input{
-                width: 100px;
-                margin-left:15px;
-                margin-top: 1px;
+                width: 190px;
+                margin-left:-17px;
+                margin-top: 15px;
+                padding-top: 15px;
                 
             }
             label{
-                margin-left:15px;
+                margin-left:-19px;
                 display: flex;
-                margin-top: 9px;
+                font-size: 29px;
+                margin-top: -70px;
+                width: 290px;
+                padding-top: 68px;
             }
             button{
                 margin-top: 10px;
-                margin-left: 15px;
+                margin-left: 45px;
+                position: absolute;
+                height: 30px;
+                border-radius: 10px;
+                color: white;
+                background-color: rgb(15, 64, 83);
             }
         </style>
     </head>
     <body>
         <div class="details">
             <label>Enter username :</label>
-            <input id="username"  type="text" required />
+            <input id="username"  type="text" required>
             <label>Enter Password :</label>
             <input type="text">
             <button onclick="redirect()">SUBMIT</button>
         </div>
         <script>
-            let name = document.getElementById('username').value;
+            
             
             function redirect(){
-                name = document.getElementById('username').value;
-                if(name==="Alvin"){}
+               let name = document.getElementById('username').value;
+                if(name===""){
+                    alert("Please enter a username");
+                    return;
+                }
                 localStorage.setItem("user",name);
                 window.location.replace("user_page.html");
             }
