@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            USER
+        </title>
+        <style>
+            body{
+                background-color:rgb(102, 116, 42);
+            }
+            button{
+                margin-left: 900px;
+                display: flex;
+                margin-top: -67px;
+                background-color: rgb(15, 64, 83);
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>WELCOME ,<span id="name"> </span></h1>
+        <br>
+        <button onclick="window.location.replace('login.html')">LOG OUT</button>
+    </body>
+    <script>
+        const user = localStorage.getItem("user")
+        console.log(user);
+        console.log("Hi");
+        let name = document.getElementById('name').innerHTML=user;
+       
+    </script>
+</html>
